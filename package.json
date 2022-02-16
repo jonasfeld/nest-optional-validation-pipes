@@ -1,0 +1,25 @@
+{
+  "name": "nest-optional-validation-pipes",
+  "version": "1.0.0",
+  "description": "A NestJS addon that provides validation pipes for the simple data types with the option of optionality. E.g. a ParseBoolOptionalPipe that validates & transforms @Query parameters that are then either true, false or undefined/null or throw an error.",
+  "scripts": {
+    "build": "tsc"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "nest",
+    "nestjs",
+    "pipes",
+    "nestjs-pipes",
+    "nest-pipes"
+  ],
+  "author": "Jonas Feld",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.3.1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "newLine": "lf",
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "declaration": true,
+    "importHelpers": true,
+    "removeComments": false,
+    "noLib": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "sourceMap": false,
+    "allowJs": false,
+    "strictNullChecks": false,
+    "outDir": "dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
