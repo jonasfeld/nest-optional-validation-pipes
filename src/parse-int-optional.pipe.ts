@@ -46,6 +46,8 @@ export class ParseIntOptionalPipe implements PipeTransform<string> {
    * @param metadata contains metadata about the currently processed route argument
    */
   async transform(value: string, metadata: ArgumentMetadata): Promise<number> {
+    if (value == undefined) return undefined;
+
     const isNumeric =
       ["string", "number"].includes(typeof value) &&
       /^-?\d+$/.test(value) &&
