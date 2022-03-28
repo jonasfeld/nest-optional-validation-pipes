@@ -10,7 +10,7 @@ import {
   HttpErrorByCode,
 } from "@nestjs/common/utils/http-error-by-code.util";
 
-export interface ParseEnumPipeOptions {
+export interface ParseEnumOptionalPipeOptions {
   errorHttpStatusCode?: ErrorHttpStatusCode;
   exceptionFactory?: (error: string) => any;
 }
@@ -25,12 +25,12 @@ export interface ParseEnumPipeOptions {
  * @publicApi
  */
 @Injectable()
-export class ParseEnumPipe<T = any> implements PipeTransform<T> {
+export class ParseEnumOptionalPipe<T = any> implements PipeTransform<T> {
   protected exceptionFactory: (error: string) => any;
 
   constructor(
     protected readonly enumType: T,
-    @Optional() options?: ParseEnumPipeOptions
+    @Optional() options?: ParseEnumOptionalPipeOptions
   ) {
     if (!enumType) {
       throw new Error(
